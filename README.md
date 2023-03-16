@@ -41,6 +41,10 @@ if not  contact me at CoomInPickle#8341 over discord
 5. Edit the config.txt with the correct information found in the voicemeeter vaio menu.
 6. run the script again and it should work. if it doesnt check if config.txt if all the information is filled in correctly.
 
+## Autostart
+- you can put a shortcut for the .exe into autostart and it will start on startup. just remeber to keep the config.txt and the .exe in the same folder
+- for the .py idk how to do, therefore i reccomend the .exe
+
 ## Not working?
 1. check if the commands arrive in the voicemeeter vban window. if they arrive continue with step 3 otherwhise step 2
 2. check if you filled the config.txt file in correctly. if u need a new one just delete the current one and run the script.
