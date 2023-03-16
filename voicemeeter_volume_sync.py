@@ -18,11 +18,9 @@ if config_file == False:
         file.write("streamname = Streamname                 \n")
         file.write("version = VERSION                       \n")
 
-
 # config file stuff
 config = configparser.ConfigParser()
 config.read_file(open(r'config.txt'))
-
 
 # getting the config info
 cport = config.get("vban_connection", "port")
@@ -30,14 +28,12 @@ cip = config.get("vban_connection", "ip")
 cstreamname = config.get("vban_connection", "streamname")
 cversion = config.get("vban_connection", "version")
 
-
 # audio stuff
 devices = AudioUtilities.GetSpeakers()
 interface = devices.Activate(
     IAudioEndpointVolume._iid_, CLSCTX_ALL, None)
 volume = cast(interface, POINTER(IAudioEndpointVolume))
 current_volume = volume.GetMasterVolumeLevel()
-
 
 # voicemeeter stuff
 vban = vban_cmd.api(cversion, ip=cip, port=int(cport), streamname=cstreamname)
@@ -86,7 +82,6 @@ def sync_vol():
 # getting starting state of volume and mute
 old_vol = volume.GetMasterVolumeLevelScalar()
 old_mute = volume.GetMute()
-
 
 # actual synchonizing
 if cversion == "potato":  # for potato
