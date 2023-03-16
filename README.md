@@ -8,8 +8,8 @@ some volume levels will be skipped in voicemeeter. You can use AutoHotKey
 to change the windows volume increments, but it makes it more laggy cause
 of the rounding the script does. It still works the same and wont breake.
 
-##Installing
-#.py
-yes
-@.exe
+#Installing
+##.py
+
+##.exe
 also yes
