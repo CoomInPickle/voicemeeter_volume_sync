@@ -1,0 +1,9 @@
+# enter your vban stuff in here         
+# by replacing all the capitalized words
+# with the corresponding information.   
+                                        
+[vban_connection]                       
+port = PORT                             
+ip = IP                                 
+streamname = Streamname                 
+version = VERSION                       
