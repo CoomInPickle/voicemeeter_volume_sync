@@ -5,6 +5,8 @@ translates the volume to the voicmeeter output.
 It also detectes when the volume is detected and mutes voicemeeter if windows
 volume gets muted.
 
+Note: i frogot the requirements for now, il add them later
+
 Sadly the windows volume only changes in increments of 2, therefore
 some volume levels will be skipped in voicemeeter. You can use AutoHotKey
 to change the windows volume increments, but it makes it more laggy cause
